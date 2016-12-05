@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.beans.property.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.Color?>
+
+
+
+<VBox alignment="CENTER"  spacing="10" prefWidth="300" prefHeight="300"   fx:id = "root" fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">
+  <stylesheets>
+    <URL value="@style.css"/>
+  </stylesheets>
+    
+    <StackPane alignment="CENTER">
+      <Rectangle fill="GREEN" stroke="BLACK" width="280" height="45" fx:id="textField"/>
+      <Text fx:id = "output" font="$FONT"/>
+    </StackPane>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="acbut" text="AC" onAction="#Operators"/>
+        <Button text="root" onAction="#Operators"/>
+        <Button text="x^2" onAction="#Operators"/>
+        <Button text="sin" onAction="#Operators"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="7" onAction="#Numbers"/>
+        <Button text="8" onAction="#Numbers"/>
+        <Button text="9" onAction="#Numbers"/>
+        <Button text="cos" onAction="#Operators"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="4" onAction="#Numbers"/>
+        <Button text="5" onAction="#Numbers"/>
+        <Button text="6" onAction="#Numbers"/>
+        <Button text="/" onAction="#Operators"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="1" onAction="#Numbers"/>
+        <Button text="2" onAction="#Numbers"/>
+        <Button text="3" onAction="#Numbers"/>
+        <Button text="*" onAction="#Operators"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="0" onAction="#Numbers"/>
+        <Button text="=" onAction="#Operators"/>
+        <Button text="-" onAction="#Operators"/>
+        <Button text="+" onAction="#Operators"/>
+    </HBox>
+</VBox>

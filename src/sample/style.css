@@ -1,0 +1,10 @@
+.button{
+    -fx-background-color: white;
+    -fx-pref-width: 60px;
+}
+#root{
+    -fx-background-color: white;
+}
+#acbut{
+    -fx-background-color: gray;
+}
